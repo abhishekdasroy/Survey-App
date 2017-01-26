@@ -1,0 +1,23 @@
+<div class="row" ng-init="myBlog.loadAllBlogs()">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="pager">
+                    <li class="next">
+                        <a ng-href="#/create">Add a new survey blog &rarr;</a>
+                    </li>
+                </ul>
+                   
+                </ul>
+                
+                 <div class="post-preview" ng-repeat="blog in myBlog.blogs">
+
+                    <special-card></special-card>
+                    
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                
+            </div>
+</div>

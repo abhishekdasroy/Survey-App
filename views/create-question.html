@@ -1,0 +1,31 @@
+ <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br/>
+                <h1>Create a new Survey question</h1>
+                <div class="post-preview">
+                   <form ng-submit="newBlog.createQuestion(newBlog.surveyId)">
+
+                       <input placeholder="question of Blog" type="text" name="questionText" ng-model="newBlog.questionText" required=""><br/><br/>
+
+  
+                       <br/><br/>
+
+
+                       <input type="submit" value="Create a question">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href='#/blog/{{newBlog.surveyId}}/questions/all'>Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>

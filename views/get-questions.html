@@ -1,0 +1,75 @@
+<div class="row" ng-init="getBlog.loadAllQuestions()">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="pager">
+
+                 <li class="next">
+                        <a ng-href="#/blog/{{getBlog.surveyId}}/question/create">Add a new question  &rarr;</a>
+                    </li>   
+                    
+                </ul>
+
+                <br><br>
+
+                
+                 <div class="post-new" ng-repeat="blog in getBlog.blogs">
+
+         <ul class="pager">
+
+                 <li class="next">
+                        <a ng-href="#/blog/questions/{{blog.questionId}}/edit"> Edit question  &rarr;</a>
+                    </li>
+
+
+                  <li class="next">
+                
+        <a ng-href="#/blog/questions/{{blog.questionId}}/options/create"> Create option  &rarr;</a>
+
+                 </li>  
+   
+                    
+                </ul>
+                
+        
+               <h2 class="post-questions">
+
+                 {{blog.questionText}}
+
+                     </h2>
+
+
+                     <ul>
+
+            <li  ng-repeat="option in getBlog.options">
+                <label>
+                    <input name="{{option.optionText}}" type="radio" ng-model="{{option.optionText}}
+ value="{{option.optionText}}">
+                    {{option.optionText}}
+                </label>
+            </li>
+        </ul>
+           
+  
+     <a ng-click="getBlog.deleteQuestion(blog.questionId,$index)">Delete this Question</a>
+
+     
+
+
+                    
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                
+            </div>
+</div>
+
+<!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href='#/blog/{{getBlog.surveyId}}'>Back to Survey &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>

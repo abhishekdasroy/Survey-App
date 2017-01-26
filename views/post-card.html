@@ -1,0 +1,18 @@
+<div class="myCard">
+	{{cardHeading}}
+	<a ng-href="#/blog/{{blog.surveyId}}" >
+	    <h2 class="post-title">
+	        {{blog.surveyTitle}}
+	    </h2>
+	    <h3 class="post-subtitle">
+	         {{blog.surveySubtitle}}
+	    </h3>
+	    <h3 class="post-Instructions">
+              {{blog.instructions}}
+        </h3>
+
+	</a>
+	 
+	<a ng-click="myBlog.deleteBlog(blog.surveyId,$index)">Delete this blog</a>
+
+</div>

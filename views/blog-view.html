@@ -1,0 +1,35 @@
+<div class="row" ng-init="singleBlog.loadSingeBlog()">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <h1>{{singleBlog.blog.surveyTitle}}</h1>
+
+                <div class="post-preview">
+                    <h2>{{singleBlog.blog.surveySubtitle}}</h2><br>
+                        
+            <h3>{{singleBlog.blog.instructions}}</h3>
+
+             
+
+                            
+                </div>
+                    
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a ng-href="#/blog/{{singleBlog.surveyId}}/edit">Edit this blog &rarr;</a>
+                    </li>
+                    
+                
+                    <li class="next">
+                        <a ng-href="#/blog/{{singleBlog.surveyId}}/questions/all">Get all questions&rarr;</a>
+                    </li>
+                    <li class="next">
+                        <a href="#/">Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>

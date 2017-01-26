@@ -1,0 +1,28 @@
+ <div class="row" ng-init="editBlog.editQuestions(editBlog.questionId)">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <br/>
+                <h1> New Question</h1>
+                <div class="post-preview">
+                   <form ng-submit="editBlog.editQuestions(editBlog.questionId)">
+                       
+                     <input placeholder="Put a question here" type="text" name="questionText" ng-model="editBlog.blog.questionText" required=""><br/><br/>
+                       
+                       <br/><br/>
+                       <input type="submit" value="Edit this question">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a ng-href="#/">Back to Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+</div>
